@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DR Style | Camisetas oversize streetwear</title>
+<meta name="description" content="DR Style: camisetas oversize con estampados únicos. Mira la colección y pide directo por WhatsApp.">
+<meta property="og:title" content="DR Style | Camisetas oversize streetwear">
+<meta property="og:description" content="Estampados con carácter. $75.000 COP. Pide por WhatsApp.">
+<meta property="og:image" content="images/camiseta-06.jpg">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --carbon:#2e2e2e; --carbon-2:#242424; --humo:#8a8a8a; --linea:#474747; --hueso:#f2f2f0; --blanco:#fff; --wa:#25d366; --wa-texto:#0b2e17;
+  --display:"Big Shoulders Display","Arial Narrow",Impact,sans-serif; --texto:"Work Sans",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+  --pad:clamp(20px,5vw,64px);
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{background:var(--carbon);color:var(--hueso);font:400 16px/1.6 var(--texto);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--wa);outline-offset:3px}
+.wrap{padding-inline:var(--pad);max-width:1280px;margin-inline:auto}
+
+header{position:sticky;top:0;z-index:20;background:rgba(36,36,36,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--linea)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font:900 26px/1 var(--display);letter-spacing:.06em}
+.brand img{width:42px;height:42px}
+nav{display:flex;align-items:center;gap:26px}
+nav a{text-decoration:none;font-weight:500;font-size:15px;color:#cfcfcf}
+nav a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;font:600 15px/1 var(--texto);padding:14px 24px;text-decoration:none;border:0;cursor:pointer}
+.btn-wa{background:var(--wa);color:var(--wa-texto)}
+.btn-wa:hover{filter:brightness(1.08)}
+.btn-line{border:1.5px solid #fff;color:#fff;background:transparent}
+.btn-line:hover{background:#fff;color:var(--carbon)}
+
+.hero{padding-block:clamp(36px,7vw,88px) clamp(40px,6vw,72px)}
+.hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(24px,5vw,72px);align-items:center}
+.hero h1{font:900 clamp(64px,11vw,148px)/.86 var(--display);text-transform:uppercase;letter-spacing:.005em}
+.hero h1 span{color:var(--humo);display:block}
+.hero p{max-width:44ch;margin:28px 0 34px;color:#cfcfcf;font-size:18px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px}
+.collage{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.collage img{width:100%;object-fit:cover;aspect-ratio:3/4}
+.collage img:nth-child(1){grid-row:span 2;aspect-ratio:auto;height:100%}
+.hero-price{display:flex;gap:28px;margin-top:44px;border-top:1px solid var(--linea);padding-top:20px;flex-wrap:wrap}
+.hero-price div{font-size:14px;color:var(--humo)}
+.hero-price strong{display:block;font:700 34px/1 var(--display);color:#fff;letter-spacing:.03em;margin-bottom:4px}
+
+section{padding-block:clamp(48px,7vw,96px)}
+h2{font:900 clamp(40px,6vw,76px)/.95 var(--display);text-transform:uppercase}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:36px}
+.sec-head p{color:var(--humo);max-width:42ch}
+.filtros{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:36px}
+.filtros button{font:500 14px/1 var(--texto);color:#ddd;background:transparent;border:1.5px solid var(--linea);border-radius:999px;padding:11px 18px;cursor:pointer}
+.filtros button:hover{border-color:#fff}
+.filtros button[aria-pressed="true"]{background:#fff;color:var(--carbon);border-color:#fff}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:clamp(28px,4vw,48px) 24px}
+.item[hidden]{display:none}
+.item img{width:100%;aspect-ratio:3/4;object-fit:cover;background:var(--carbon-2)}
+.item-info{padding-top:16px}
+.item h3{font:700 30px/1 var(--display);letter-spacing:.03em;text-transform:uppercase}
+.item p{color:#b8b8b8;font-size:15px;margin:8px 0 16px}
+.item-foot{display:flex;justify-content:space-between;align-items:center;gap:12px;border-top:1px solid var(--linea);padding-top:14px}
+.price strong{display:block;font:700 28px/1 var(--display);letter-spacing:.03em}
+.price span{font-size:13px;color:var(--humo)}
+.item .btn{padding:12px 18px;font-size:14px}
+
+.porque{background:var(--carbon-2)}
+.porque-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:36px;margin-top:44px}
+.porque h3{font:700 26px/1.05 var(--display);text-transform:uppercase;letter-spacing:.03em;margin-bottom:10px}
+.porque p{color:#b8b8b8;font-size:15px}
+.porque .rule{width:36px;height:3px;background:#fff;margin-bottom:18px}
+
+.pasos{counter-reset:p;list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;margin-top:40px}
+.pasos li{counter-increment:p;border-top:2px solid #fff;padding-top:18px}
+.pasos li::before{content:counter(p);display:block;font:900 56px/1 var(--display);color:var(--humo);margin-bottom:8px}
+.pasos strong{display:block;font:700 26px/1.05 var(--display);text-transform:uppercase;letter-spacing:.03em;margin-bottom:6px}
+.pasos span{color:#b8b8b8;font-size:15px}
+
+.cierre{background:#fff;color:var(--carbon);text-align:center}
+.cierre img{width:96px;margin:0 auto 20px;filter:invert(1)}
+.cierre h2{margin-bottom:18px}
+.cierre p{color:#555;margin:0 auto 28px;max-width:46ch}
+.cierre .btn-wa{font-size:17px;padding:18px 34px}
+.cierre .num{display:block;margin-top:18px;font:700 28px/1 var(--display);letter-spacing:.06em}
+
+footer{padding-block:28px;color:var(--humo);font-size:14px;border-top:1px solid var(--linea)}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+.flota{position:fixed;right:18px;bottom:18px;z-index:30;width:60px;height:60px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.4)}
+.flota svg{width:32px;height:32px;fill:var(--wa-texto)}
+
+@media (max-width:860px){
+  .hero-grid{grid-template-columns:1fr}
+  nav a{display:none}
+}
+@media (max-width:420px){
+  .brand span{font-size:22px}
+  .bar .btn{padding:12px 16px;font-size:14px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#inicio" aria-label="DR Style, inicio"><img src="images/logo.png" alt="" width="42" height="42"><span>DR STYLE</span></a>
+    <nav aria-label="Principal">
+      <a href="#coleccion">Colección</a>
+      <a href="#pedir">Cómo pedir</a>
+      <a class="btn btn-wa" href="https://wa.me/573143492143?text=Hola%20DR%20Style%2C%20quiero%20ver%20la%20colecci%C3%B3n" target="_blank" rel="noopener">Escríbenos</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+  <div class="wrap hero">
+    <div class="hero-grid">
+      <div>
+        <h1>Viste<span>tu historia</span></h1>
+        <p>Camisetas oversize con estampados que se notan: arte clásico, calle y símbolos, en cortes cómodos para todos los días.</p>
+        <div class="hero-cta">
+          <a class="btn btn-wa" href="#coleccion" style="background:#fff;color:var(--carbon)">Ver la colección</a>
+          <a class="btn btn-line" href="https://wa.me/573143492143" target="_blank" rel="noopener">Hablar por WhatsApp</a>
+        </div>
+        <div class="hero-price">
+          <div><strong>$75.000</strong>COP por camiseta</div>
+          <div><strong>17</strong>diseños disponibles</div>
+        </div>
+      </div>
+      <div class="collage" aria-hidden="true">
+        <img src="images/camiseta-06.jpg" alt="">
+        <img src="images/camiseta-10.jpg" alt="">
+        <img src="images/camiseta-17.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <section id="coleccion" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Colección</h2>
+        <p>Toca “Pedir esta” en la camiseta que te guste y te llevamos directo a nuestro chat de WhatsApp con el mensaje listo.</p>
+      </div>
+      <div class="filtros" role="group" aria-label="Filtrar por color">
+        <button type="button" data-f="todas" aria-pressed="true">Todas</button>
+        <button type="button" data-f="negra" aria-pressed="false">Negras</button>
+        <button type="button" data-f="blanca" aria-pressed="false">Blancas</button>
+        <button type="button" data-f="color" aria-pressed="false">De color</button>
+      </div>
+      <div class="grid" id="grid">
+      <article class="item" data-tono="negra">
+        <img src="images/camiseta-01.jpg" alt="Camiseta Justice de DR Style" loading="lazy" width="760" height="1042">
+        <div class="item-info">
+          <h3>Justice</h3>
+          <p>Camiseta negra oversize con estampado en espalda de una estatua clásica de la justicia rodeada de detalles florales. Elegancia oscura con espíritu de arte antiguo.</p>
+          <div class="item-foot">
+            <div class="price"><strong>$75.000</strong><span>COP · Negra</span></div>
+            <a class="btn btn-wa" href="https://wa.me/573143492143?text=Hola%20DR%20Style%2C%20me%20interesa%20la%20camiseta%20Justice.%20%C2%BFQu%C3%A9%20tallas%20tienen%20disponibles%3F" target="_blank" rel="noopener">Pedir esta</a>
+          </div>
+        </div>
+      </article>
+      <article class="item" data-tono="negra">
+        <img src="images/camiseta-02.jpg" alt="Camiseta High Class de DR Style" loading="lazy" width="760" height="1042">
+        <div class="item-info">
+          <h3>High Class</h3>
+          <p>Camiseta negra oversize con ilustración frontal de una figura entre nubes y tipografía de lujo. Para quienes entienden el estilo como actitud.</p>
+          <div class="item-foot">
+            <div class="price"><strong>$75.000</strong><span>COP · Negra</span></div>
+            <a class="btn btn-wa" href="https://wa.me/573143492143?text=Hola%20DR%20Style%2C%20me%20interesa%20la%20camiseta%20High%20Class.%20%C2%BFQu%C3%A9%20tallas%20tienen%20disponibles%3F" target="_blank" rel="noopener">Pedir esta</a>
+          </div>
+        </div>
+      </article>
+      <article class="item" data-tono="negra">
+        <img src="images/camiseta-03.jpg" alt="Camiseta Hope de DR Style" loading="lazy" width="760" height="1042">
+        <div class="item-info">
+          <h3>Hope</h3>
+          <p>Camiseta negra oversize con busto vendado en la espalda y acentos en naranja. Minimalismo misterioso con mensaje.</p>
+          <div class="item-foot">
+            <div class="price"><strong>$75.000</strong><span>COP · Negra</span></div>
+            <a class="btn btn-wa" href="https://wa.me/573143492143?text=Hola%20DR%20Style%2C%20me%20interesa%20la%20camiseta%20Hope.%20%C2%BFQu%C3%A9%20tallas%20tienen%20disponibles%3F" target="_blank" rel="noopener">Pedir esta</a>
+          </div>
+        </div>
+      </article>
+      <article class="item" data-tono="blanca">
+        <img src="images/camiseta-04.jpg" alt="Camiseta Highest Mercy de DR Style" loading="lazy" width="760" height="1042">
+        <div class="item-info">
+          <h3>Highest Mercy</h3>
+          <p>Camiseta blanca oversize con ángel escultural y tipografía en rojo intenso. Contraste fuerte y diseño con presencia.</p>
+          <div class="item-foot">
+            <div class="price"><strong>$75.000</strong><span>COP · Blanca</span></div>
+            <a class="btn btn-wa" href="https://wa.me/573143492143?text=Hola%20DR%20Style%2C%20me%20interesa%20la%20camiseta%20Highest%20Mercy.%20%C2%BFQu%C3%A9%20tallas%20tienen%20disponibles%3F" target="_blank" rel="noopener">Pedir esta</a>
+          </div>
+        </div>
+      </article>
+      <article class="item" data-tono="negra">
+        <img src="images/camiseta-05.jpg" alt="Camiseta Pegasus de DR Style" loading="lazy" width="760" height="1042">
+        <div class="item-info">
+          <h3>Pegasus</h3>
+          <p>Camiseta negra oversize con pegaso en llamas y colores vibrantes inspirados en el racing. Energía pura al frente.</p>
+          <div class="item-foot">
+            <div class="price"><strong>$75.000</strong><span>COP · Negra</span></div>
+            <a class="btn btn-wa" href="https://wa.me/573143492143?text=Hola%20DR%20Style%2C%20me%20interesa%20la%20camiseta%20Pegasus.%20%C2%BFQu%C3%A9%20tallas%20tienen%20disponibles%3F" target="_blank" rel="noopener">Pedir esta</a>
+          </div>
+        </div>
+      </article>
+      <article class="item" data-tono="blanca">
+        <img src="images/camiseta-06.jpg" alt="Camiseta Hustle de DR Style" loading="lazy" width="760" height="1042">
+        <div class="item-info">
+          <h3>Hustle</h3>
+          <p>Camiseta blanca oversize con ilustración y tipografía en rojo para quienes trabajan en silencio. Diseño en frente y espalda.</p>
+          <div class="item-foot">
+            <div class="price"><strong>$75.000</strong><span>COP · Blanca</span></div>
+            <a class="btn btn-wa" href="https://wa.me/573143492143?text=Hola%20DR%20Style%2C%20me%20interesa%20la%20camiseta%20Hustle.%20%C2%BFQu%C3%A9%20tallas%20tienen%20disponibles%3F" target="_blank" rel="noopener">Pedir esta</a>
+          </div>
+        </div>
+      </article>
+      <article class="item" data-tono="negra">
+        <img src="images/camiseta-07.jpg" alt="Camiseta Life Storage de DR Style" loading="lazy" width="760" height="1042">
+        <div class="item-info">
+          <h3>Life Storage</h3>
+          <p>Camiseta negra oversize con mano en blanco y negro sobre cuadrícula azul. Estética futurista y urbana.</p>
+          <div class="item-foot">
+            <div class="price"><strong>$75.000</strong><span>COP · Negra</span></div>
+            <a class="btn btn-wa" href="https://wa.me/573143492143?text=Hola%20DR%20Style%2C%20me%20interesa%20la%20camiseta%20Life%20Storage.%20%C2%BFQu%C3%A9%20tallas%20tienen%20disponibles%3F" target="_blank" rel="noopener">Pedir esta</a>
+          </div>
+        </div>
+      </article>
+      <article class="item" data-tono="negra">
+        <img src="images/camiseta-08.jpg" alt="Camiseta Outcast de DR Style" loading="lazy" width="760" height="1042">
+        <div class="item-info">
+          <h3>Outcast</h3>
+          <p>Camiseta negra sin mangas con figura alada y detalles gráficos minimalistas. Libertad y rebeldía.</p>
+          <div class="item-foot">
+            <div class="price"><strong>$75.000</strong><span>COP · Negra</span></div>
+            <a class="btn btn-wa" href="https://wa.me/573143492143?text=Hola%20DR%20Style%2C%20me%20interesa%20la%20camiseta%20Outcast.%20%C2%BFQu%C3%A9%20tallas%20tienen%20disponibles%3F" target="_blank" rel="noopener">Pedir esta</a>
+          </div>
+        </div>
+      </article>
+      <article class="item" data-tono="blanca">
+        <img src="images/camiseta-09.jpg" alt="Camiseta Brain & Heart de DR Style" loading="lazy" width="760" height="1042">
+        <div class="item-info">
+          <h3>Brain & Heart</h3>
+          <p>Camiseta blanca oversize con una balanza que equilibra razón y emoción: cerebro y corazón. Un diseño con significado.</p>
+          <div class="item-foot">
+            <div class="price"><strong>$75.000</strong><span>COP · Blanca</span></div>
+            <a class="btn btn-wa" href="https://wa.me/573143492143?text=Hola%20DR%20Style%2C%20me%20interesa%20la%20camiseta%20Brain%20%26%20Heart.%20%C2%BFQu%C3%A9%20tallas%20tienen%20disponibles%3F" target="_blank" rel="noopener">Pedir esta</a>
+          </div>
+        </div>
+      </article>
+      <article class="item" data-tono="negra">
+        <img src="images/camiseta-10.jpg" alt="Camiseta Calavera Mexicana de DR Style" loading="lazy" width="760" height="1042">
+        <div class="item-info">
+          <h3>Calavera Mexicana</h3>
+          <p>Camiseta negra oversize con gran calavera de azúcar de estilo mexicano, llena de color y detalle. Arte popular en gran formato.</p>
+          <div class="item-foot">
+            <div class="price"><strong>$75.000</strong><span>COP · Negra</span></div>
+            <a class="btn btn-wa" href="https://wa.me/573143492143?text=Hola%20DR%20Style%2C%20me%20interesa%20la%20camiseta%20Calavera%20Mexicana.%20%C2%BFQu%C3%A9%20tallas%20tienen%20disponibles%3F" target="_blank" rel="noopener">Pedir esta</a>
+          </div>
+        </div>
+      </article>
+      <article class="item" data-tono="blanca">
+        <img src="images/camiseta-11.jpg" alt="Camiseta D.A.R.K. de DR Style" loading="lazy" width="760" height="1042">
+        <div class="item-info">
+          <h3>D.A.R.K.</h3>
+          <p>Camiseta blanca oversize con busto clásico sobre trama gráfica y tipografía espaciada. Arte renacentista con toque contemporáneo.</p>
+          <div class="item-foot">
+            <div class="price"><strong>$75.000</strong><span>COP · Blanca</span></div>
+            <a class="btn btn-wa" href="https://wa.me/573143492143?text=Hola%20DR%20Style%2C%20me%20interesa%20la%20camiseta%20D.A.R.K..%20%C2%BFQu%C3%A9%20tallas%20tienen%20disponibles%3F" target="_blank" rel="noopener">Pedir esta</a>
+          </div>
+        </div>
+      </article>
+      <article class="item" data-tono="blanca">
+        <img src="images/camiseta-12.jpg" alt="Camiseta Abnormal de DR Style" loading="lazy" width="760" height="1042">
+        <div class="item-info">
+          <h3>Abnormal</h3>
+          <p>Camiseta blanca oversize con corazón realista en la espalda y caligrafía en rojo. Intensidad y emoción sin filtro.</p>
+          <div class="item-foot">
+            <div class="price"><strong>$75.000</strong><span>COP · Blanca</span></div>
+            <a class="btn btn-wa" href="https://wa.me/573143492143?text=Hola%20DR%20Style%2C%20me%20interesa%20la%20camiseta%20Abnormal.%20%C2%BFQu%C3%A9%20tallas%20tienen%20disponibles%3F" target="_blank" rel="noopener">Pedir esta</a>
+          </div>
+        </div>
+      </article>
+      <article class="item" data-tono="color">
+        <img src="images/camiseta-13.jpg" alt="Camiseta Future de DR Style" loading="lazy" width="760" height="1042">
+        <div class="item-info">
+          <h3>Future</h3>
+          <p>Camiseta morada de efecto lavado con perro ilustrado en estilo digital y texto minimalista. Un color único para destacar.</p>
+          <div class="item-foot">
+            <div class="price"><strong>$75.000</strong><span>COP · Morada</span></div>
+            <a class="btn btn-wa" href="https://wa.me/573143492143?text=Hola%20DR%20Style%2C%20me%20interesa%20la%20camiseta%20Future.%20%C2%BFQu%C3%A9%20tallas%20tienen%20disponibles%3F" target="_blank" rel="noopener">Pedir esta</a>
+          </div>
+        </div>
+      </article>
+      <article class="item" data-tono="negra">
+        <img src="images/camiseta-14.jpg" alt="Camiseta Redemption de DR Style" loading="lazy" width="760" height="1042">
+        <div class="item-info">
+          <h3>Redemption</h3>
+          <p>Camiseta negra oversize con figura cubriéndose el rostro y tipografía en rojo. Un diseño introspectivo y potente.</p>
+          <div class="item-foot">
+            <div class="price"><strong>$75.000</strong><span>COP · Negra</span></div>
+            <a class="btn btn-wa" href="https://wa.me/573143492143?text=Hola%20DR%20Style%2C%20me%20interesa%20la%20camiseta%20Redemption.%20%C2%BFQu%C3%A9%20tallas%20tienen%20disponibles%3F" target="_blank" rel="noopener">Pedir esta</a>
+          </div>
+        </div>
+      </article>
+      <article class="item" data-tono="negra">
+        <img src="images/camiseta-15.jpg" alt="Camiseta Wrathful Temper de DR Style" loading="lazy" width="760" height="1042">
+        <div class="item-info">
+          <h3>Wrathful Temper</h3>
+          <p>Camiseta negra oversize con pantera azul rugiendo dentro de un óvalo con cadenas. Fuerza y carácter al frente.</p>
+          <div class="item-foot">
+            <div class="price"><strong>$75.000</strong><span>COP · Negra</span></div>
+            <a class="btn btn-wa" href="https://wa.me/573143492143?text=Hola%20DR%20Style%2C%20me%20interesa%20la%20camiseta%20Wrathful%20Temper.%20%C2%BFQu%C3%A9%20tallas%20tienen%20disponibles%3F" target="_blank" rel="noopener">Pedir esta</a>
+          </div>
+        </div>
+      </article>
+      <article class="item" data-tono="negra">
+        <img src="images/camiseta-16.jpg" alt="Camiseta Angels Guard Our Hearts de DR Style" loading="lazy" width="760" height="1042">
+        <div class="item-info">
+          <h3>Angels Guard Our Hearts</h3>
+          <p>Camiseta negra de efecto desgastado con corazón y ángeles plateados en la espalda. Delicadeza y crudeza en un solo diseño.</p>
+          <div class="item-foot">
+            <div class="price"><strong>$75.000</strong><span>COP · Negra</span></div>
+            <a class="btn btn-wa" href="https://wa.me/573143492143?text=Hola%20DR%20Style%2C%20me%20interesa%20la%20camiseta%20Angels%20Guard%20Our%20Hearts.%20%C2%BFQu%C3%A9%20tallas%20tienen%20disponibles%3F" target="_blank" rel="noopener">Pedir esta</a>
+          </div>
+        </div>
+      </article>
+      <article class="item" data-tono="color">
+        <img src="images/camiseta-17.jpg" alt="Camiseta Timeless Heritage de DR Style" loading="lazy" width="760" height="1042">
+        <div class="item-info">
+          <h3>Timeless Heritage</h3>
+          <p>Camiseta azul cielo oversize con ilustración detallada y tipografía en morado. La pieza más fresca de la colección.</p>
+          <div class="item-foot">
+            <div class="price"><strong>$75.000</strong><span>COP · Azul cielo</span></div>
+            <a class="btn btn-wa" href="https://wa.me/573143492143?text=Hola%20DR%20Style%2C%20me%20interesa%20la%20camiseta%20Timeless%20Heritage.%20%C2%BFQu%C3%A9%20tallas%20tienen%20disponibles%3F" target="_blank" rel="noopener">Pedir esta</a>
+          </div>
+        </div>
+      </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="porque">
+    <div class="wrap">
+      <h2>Hechas para usarse</h2>
+      <div class="porque-grid">
+        <div><div class="rule"></div><h3>Corte oversize</h3><p>Ajuste cómodo y caída moderna, pensado para el uso diario.</p></div>
+        <div><div class="rule"></div><h3>Tela suave y resistente</h3><p>Se siente bien desde el primer día y aguanta el uso y los lavados.</p></div>
+        <div><div class="rule"></div><h3>Estampado de alta definición</h3><p>Colores intensos y detalle nítido, con larga duración.</p></div>
+        <div><div class="rule"></div><h3>Diseños únicos</h3><p>Inspirados en arte clásico, cultura urbana y simbolismo.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pedir">
+    <div class="wrap">
+      <h2>Cómo pedir</h2>
+      <ol class="pasos">
+        <li><strong>Elige tu diseño</strong><span>Recorre la colección y escoge el que más te represente.</span></li>
+        <li><strong>Escríbenos</strong><span>Toca “Pedir esta” y dinos tu talla por WhatsApp.</span></li>
+        <li><strong>Pago y envío</strong><span>Coordinamos contigo el pago y la entrega.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="cierre">
+    <div class="wrap">
+      <img src="images/logo.png" alt="">
+      <h2>¿Listo para vestir DR Style?</h2>
+      <p>Escríbenos y resolvemos tus dudas sobre tallas, colores y envíos.</p>
+      <a class="btn btn-wa" href="https://wa.me/573143492143?text=Hola%20DR%20Style%2C%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+      <a class="num" href="https://wa.me/573143492143" target="_blank" rel="noopener">314 349 2143</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap"><span>© 2026 DR Style. Todos los derechos reservados.</span><span>Camisetas oversize streetwear</span></div>
+</footer>
+
+<a class="flota" href="https://wa.me/573143492143" target="_blank" rel="noopener" aria-label="Escribir a DR Style por WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.4 5 5.2-1.4A9.9 9.9 0 1 0 12.04 2Zm5.8 14c-.25.7-1.4 1.3-1.9 1.35-.5.05-1.1.2-3.6-.8-3-1.2-4.9-4.2-5-4.4-.15-.2-1.2-1.6-1.2-3s.75-2.1 1-2.4c.25-.3.55-.35.75-.35h.55c.2 0 .4 0 .6.5l.85 2c.1.2.15.4 0 .6l-.4.6c-.2.2-.4.4-.2.8.2.35.9 1.5 2 2.4 1.4 1.2 2.5 1.6 2.9 1.8.35.2.55.15.8-.1.2-.25.9-1 1.15-1.4.25-.35.5-.3.8-.2l1.9.9c.35.15.55.25.65.4.1.2.1.8-.15 1.55Z"/></svg>
+</a>
+
+<script>
+  const botones=document.querySelectorAll('.filtros button');
+  const items=document.querySelectorAll('.item');
+  botones.forEach(b=>b.addEventListener('click',()=>{
+    botones.forEach(x=>x.setAttribute('aria-pressed',x===b));
+    items.forEach(it=>{it.hidden = b.dataset.f!=='todas' && it.dataset.tono!==b.dataset.f});
+  }));
+</script>
+</body>
+</html>
